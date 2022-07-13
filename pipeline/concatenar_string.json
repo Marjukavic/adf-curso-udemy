@@ -1,0 +1,34 @@
+{
+	"name": "concatenar_string",
+	"properties": {
+		"description": "Concatenar string",
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "query",
+					"value": {
+						"value": "select * from table where data_inicio >= '@{pipeline().parameters.p_data}'",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"p_data": {
+				"type": "string"
+			}
+		},
+		"variables": {
+			"query": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-07-11T21:11:16Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

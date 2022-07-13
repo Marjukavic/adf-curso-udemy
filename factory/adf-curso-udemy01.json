@@ -1,0 +1,9 @@
+{
+	"name": "adf-curso-udemy01",
+	"location": "brazilsouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1d7d6f62-609e-41c5-812b-ce83be90d9d6",
+		"tenantId": "e30b6ce9-0149-4321-8a0e-f39f39183cee"
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"name": "set_variavel",
+	"properties": {
+		"description": "Como setar uma variavel ",
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "now",
+					"value": {
+						"value": "@utcnow('yyyy-MM-dd')",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"now": {
+				"type": "String",
+				"defaultValue": "1900-01-01"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-07-11T20:53:07Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

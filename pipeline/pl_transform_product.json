@@ -1,0 +1,31 @@
+{
+	"name": "pl_transform_product",
+	"properties": {
+		"description": "Executa o notebok do databricks ",
+		"activities": [
+			{
+				"name": "execute_transformation",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Shared/udemy/transform_product"
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_databricks",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2022-07-12T17:14:27Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
